@@ -21,7 +21,7 @@
 
 declare(strict_types=1);
 
-namespace pocketmine\utils;
+namespace pocketmine\binary;
 
 #include <rules/BinaryIO.h>
 
