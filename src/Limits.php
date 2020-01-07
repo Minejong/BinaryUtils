@@ -29,19 +29,19 @@ final class Limits{
 		//NOOP
 	}
 
-	public const UINT8_MAX = 0xff;
-	public const INT8_MIN = -0x7f - 1;
-	public const INT8_MAX = 0x7f;
+	const UINT8_MAX = 0xff;
+	const INT8_MIN = -0x7f - 1;
+	const INT8_MAX = 0x7f;
 
-	public const UINT16_MAX = 0xffff;
-	public const INT16_MIN = -0x7fff - 1;
-	public const INT16_MAX = 0x7fff;
+	const UINT16_MAX = 0xffff;
+	const INT16_MIN = -0x7fff - 1;
+	const INT16_MAX = 0x7fff;
 
-	public const UINT32_MAX = 0xffffffff;
-	public const INT32_MIN = -0x7fffffff - 1;
-	public const INT32_MAX = 0x7fffffff;
+	const UINT32_MAX = 0xffffffff;
+	const INT32_MIN = -0x7fffffff - 1;
+	const INT32_MAX = 0x7fffffff;
 
-	public const UINT64_MAX = 0xffffffffffffffff;
-	public const INT64_MIN = -0x7fffffffffffffff - 1;
-	public const INT64_MAX = 0x7fffffffffffffff;
+	const UINT64_MAX = 0xffffffffffffffff;
+	const INT64_MIN = -0x7fffffffffffffff - 1;
+	const INT64_MAX = 0x7fffffffffffffff;
 }

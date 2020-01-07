@@ -50,11 +50,11 @@ class BinaryStream{
 	/**
 	 * Rewinds the stream pointer to the start.
 	 */
-	public function rewind() : void{
+	public function rewind(){
 		$this->offset = 0;
 	}
 
-	public function setOffset(int $offset) : void{
+	public function setOffset(int $offset){
 		$this->offset = $offset;
 	}
 
