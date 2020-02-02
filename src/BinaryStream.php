@@ -71,6 +71,10 @@ class BinaryStream{
 		return $this->buffer;
 	}
 
+	public function getBufferSize() : int{
+		return strlen($this->buffer);
+	}
+
 	/**
 	 * @param int $len
 	 *
