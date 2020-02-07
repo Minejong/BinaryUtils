@@ -75,6 +75,10 @@ class BinaryStream{
 		return strlen($this->buffer);
 	}
 
+	public function skip(int $offset){
+		$this->offset += $offset;
+	}
+
 	/**
 	 * @param int $len
 	 *
