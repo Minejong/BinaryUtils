@@ -30,7 +30,29 @@ use function ord;
 use function strlen;
 use function substr;
 
+if(!defined("ENDIANNESS")){
+	define("ENDIANNESS", (pack("s", 1) === "\0\1" ? Binary::BIG_ENDIAN : Binary::LITTLE_ENDIAN));
+}
+
 class BinaryStream{
+
+	const UINT8_MAX = 0xff;
+	const INT8_MIN = -0x7f - 1;
+	const INT8_MAX = 0x7f;
+
+	const UINT16_MAX = 0xffff;
+	const INT16_MIN = -0x7fff - 1;
+	const INT16_MAX = 0x7fff;
+
+	const UINT32_MAX = 0xffffffff;
+	const INT32_MIN = -0x7fffffff - 1;
+	const INT32_MAX = 0x7fffffff;
+
+	const UINT64_MAX = 0xffffffffffffffff;
+	const INT64_MIN = -0x7fffffffffffffff - 1;
+	const INT64_MAX = 0x7fffffffffffffff;
+
+	const ENDIANNESS = ENDIANNESS;
 
 	/** @var int */
 	protected $offset;
