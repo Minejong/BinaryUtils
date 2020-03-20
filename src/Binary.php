@@ -24,7 +24,7 @@ declare(strict_types=1);
 /**
  * Methods for working with binary strings
  */
-namespace pocketmine\binary;
+namespace pocketmine\utils;
 
 use InvalidArgumentException;
 use function chr;

@@ -21,7 +21,7 @@
 
 declare(strict_types=1);
 
-namespace pocketmine\binary;
+namespace pocketmine\utils;
 
 final class Limits{
 
