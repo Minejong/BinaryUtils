@@ -39,8 +39,8 @@ use function substr;
 use function unpack;
 use const PHP_INT_MAX;
 
-if(!defined("ENDIANNESS")){
-	define("ENDIANNESS", (pack("s", 1) === "\0\1" ? Binary::BIG_ENDIAN : Binary::LITTLE_ENDIAN));
+if(!defined("IS_BIG_ENDIAN")){
+	define("IS_BIG_ENDIAN", pack("s", 1) === "\0\1");
 }
 
 class Binary{

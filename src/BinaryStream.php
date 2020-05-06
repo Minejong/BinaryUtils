@@ -30,8 +30,8 @@ use function ord;
 use function strlen;
 use function substr;
 
-if(!defined("ENDIANNESS")){
-	define("ENDIANNESS", (pack("s", 1) === "\0\1" ? Binary::BIG_ENDIAN : Binary::LITTLE_ENDIAN));
+if(!defined("IS_BIG_ENDIAN")){
+	define("IS_BIG_ENDIAN", pack("s", 1) === "\0\1");
 }
 
 class BinaryStream{
@@ -52,7 +52,7 @@ class BinaryStream{
 	const INT64_MIN = -0x7fffffffffffffff - 1;
 	const INT64_MAX = 0x7fffffffffffffff;
 
-	const ENDIANNESS = ENDIANNESS;
+	const BIG_ENDIAN = IS_BIG_ENDIAN;
 
 	/** @var int */
 	protected $offset;
